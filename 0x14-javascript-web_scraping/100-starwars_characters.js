@@ -3,7 +3,7 @@
 const argv = require('process').argv;
 const request = require('request');
 
-const url = 'https://swapi-api.alx-tools.com/api/films/2/';
+const url = 'https://swapi-api.alx-tools.com/api/films/' + argv[2];
 
 // Request the film data
 request(url, (error, response, body) => {

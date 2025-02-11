@@ -3,7 +3,7 @@
 const argv = require('process').argv;
 const request = require('request');
 
-const url = 'https://swapi-api.alx-tools.com/api/films/7/';
+const url = 'https://swapi-api.alx-tools.com/api/films/' + argv[3];
 
 function makeRequests (urls) {
   const url = urls.shift();
